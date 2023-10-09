@@ -1,5 +1,6 @@
 {{- $params := .Scratch.Get "params" -}}
 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <meta name="Description" content="{{ $params.description | default .Site.Params.description }}">
 
 {{- template "_internal/opengraph.html" . -}}
